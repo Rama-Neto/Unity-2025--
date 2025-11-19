@@ -124,7 +124,7 @@ public class PlayerController : MonoBehaviour
         rb.linearVelocity = moveDir * moveSpeed;
 
         // Apply rotation only when there is real input
-        if (hasInput && moveDir.sqrMagnitude > 0.0001f)
+        /*if (hasInput && moveDir.sqrMagnitude > 0.0001f)
         {
             Quaternion targetRot = Quaternion.LookRotation(moveDir);
             rb.MoveRotation(Quaternion.RotateTowards(
@@ -132,7 +132,7 @@ public class PlayerController : MonoBehaviour
                 targetRot,
                 rotationSpeed * Time.deltaTime
             ));
-        }
+        }*/
     }
 
 
